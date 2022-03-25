@@ -280,27 +280,12 @@ if every IP address is 32 bits, we have about billion to give out, a little more
 the internet consists of a lot more than six networks. We can't afford to wire each network to each other network, especially considering some of these networks span oceans, right? If we're trying to connect to a network in Asia or in Europe, we're going to have to span an entire ocean. We're going to need to use wires at some point, but we want to minimize the number of wires we actually use. We don't want to send a million wires across the ocean,because they cost millions of dollars apiece to lie down. And so rapidly, we wouldn't be able to afford the internet anymore.  So we have to have another way for every network to talk to every other network or else we have pieces of the internet that are disconnected from other pieces of the internet. And that's not what we want. But we don't want to have them all wired together. And this is where routers come back into play. We can use routers in the following way. What if instead of every network being physically connected to every other network, we had these intermediary pieces, where the networks were connected to these intermediaries, which are connected to a few networks.So instead of having one connect to two, three, four, five, six, maybe one connects to a router, which maybe connects to one or two of those networks, but also maybe connects to other routers, which alsowill connect to those other networks.And the router's job is-- it contains information called a routing table that dictates where do I go if I see a particular IP address? If I see an IP address starting with four, I'm going to go this way. If I seen IP address starting with a 12, I'm going to go that way. We don't need to be connected physically to network number four or network number 12 in this example. We just know generally where we want to go.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
---------------------------- 9
+week 9
 
 pyhton is not just used for command-line programming, thought that's a majour use case. pyhton contains native fnctionality to support networking and more, enabling site beckends to be written in python. web frameworks make this process much easier, abstracting away the minutia of puthon's syntax and providing helper funcyions. one other technique that really might come in handy as you begin to build more complex websites, and that is using something called Ajax. So, so far, in our exploration of JavaScript, we've been limited to doing a couple of really simple things for the purpose of illustration, like you click a button, and something happens. Maybe the color changes on your site, or maybe a couple of words change. But the catch is everything we've been doing so far has been client side. It's all happening on our computer. We're never really talking to the outside world. We can, however, talk to the outside world and make changes on our website, have something happen that interact with the server, but maybe it doesn't reload our entire page. We want to create a more pleasant user experience. Ajax allows us to do that. Ajax used to stand for something called Asynchronous JavaScript in XML. That's a backronym. That's not really what it's called anymore. And actually, most commonly now, instead of XML, we use JSON. But Ajax has just been the name that's kind of stuck for the technique. And what Ajax allows us to do is to refresh, basically, sections of our page without the entire page. And if you're, for example, somebody who follows sports, for instance, you might see this if you're on a sports websit where scores of games that are going on currently are being updated, but the whole page doesn't refresh. That means that the page is basically taking advantage of Ajax to just update small portions of the page. The techniques that you can do with Ajax are pretty limitless. You can do a lot of different things with it. And we're going to focus on a very specific example where, again, we're clicking a button, and something happens. But the difference is this time when something happens, we're making a server request. We're making an outbound request from a page. It's not just happening on our machine But you can do things like updating, for example, the sports scores on a website that tracks that information or your email. You might notice that sometimes when you get a new email, your entire body of your page refreshes to put that new email at the top of your inbox, but the whole page doesn't refresh. That's happening with Ajax as well. But it's constantly running all the time. It's just basically querying forever. We're, again, just going to focus on clicking abutton and something happening, but that something being not just local to our machine anymore.
 
 
---------------------------- 10
+week 10
 
 
 
