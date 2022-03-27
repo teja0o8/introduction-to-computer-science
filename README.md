@@ -1,4 +1,4 @@
-# Introduction-to-Computer-Science
+# introduction-to-computer-science
  
 week 0
  
